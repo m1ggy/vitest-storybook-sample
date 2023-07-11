@@ -68,7 +68,7 @@ function LineGraph({ data, width, height }: LineGraphProps) {
                     )})`}
                 >
                     <path
-                        d={linePath}
+                        d={linePath as string}
                         opacity={1}
                         stroke="#9a6fb0"
                         fill="none"
