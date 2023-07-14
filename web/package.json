@@ -12,7 +12,8 @@
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
     "test-vite": "vitest",
-    "test-vite:coverage": "vitest run --coverage"
+    "test-vite:coverage": "vitest run --coverage",
+    "chromatic": "npx chromatic"
   },
   "dependencies": {
     "d3": "^7.8.5",
