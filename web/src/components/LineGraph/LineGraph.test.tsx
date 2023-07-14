@@ -13,7 +13,7 @@ describe("Renders Sample Line Graph", () => {
     });
 });
 
-describe("Renders Play function of component", async () => {
+describe("Renders Play function of component", () => {
     it("renders the component", async () => {
         const { container } = render(<GraphTitle />);
         await GraphTitle.play({ canvasElement: container });

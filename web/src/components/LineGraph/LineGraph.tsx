@@ -99,7 +99,7 @@ function LineGraph({ data, width, height }: LineGraphProps) {
                         display: "flex",
                         gap: "10px",
                         flexDirection: "column",
-                        width: "250px",
+                        width: "300px",
                     }}
                 >
                     <span>Title</span>

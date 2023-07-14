@@ -1,5 +1,6 @@
 import LineGraph from "./components/LineGraph";
 import "./App.css";
+import SampleForm from "./components/SampleForm";
 
 function App() {
     const data = [
@@ -13,6 +14,10 @@ function App() {
         <>
             <div>
                 <LineGraph data={data} width={750} height={500} />
+                <SampleForm
+                    title="Test Form"
+                    onSubmit={(e) => console.log(e)}
+                />
             </div>
         </>
     );
