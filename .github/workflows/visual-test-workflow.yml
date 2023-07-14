@@ -1,0 +1,19 @@
+name: test
+run-name: test application with storybook
+on: [push]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0 # required to get git history
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: "18.16.0"
+            - run: npm install yarn -g
+            - run: cd web/ && yarn
+            - uses: chromaui/action@v1
+              with:
+                  projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+                  workingDir: web/
