@@ -2,7 +2,6 @@ import { userEvent, within } from '@storybook/testing-library'
 import type { Meta, StoryObj } from '@storybook/react'
 import { expect } from '@storybook/jest'
 import LineGraph from '.'
-import React from 'react'
 const meta = {
     title: 'Graphs/Line',
     component: LineGraph,
@@ -14,7 +13,7 @@ const meta = {
     },
 } satisfies Meta<typeof LineGraph>
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>
 
 export const Sample: Story = {
     args: {

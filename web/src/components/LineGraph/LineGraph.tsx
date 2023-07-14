@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import * as d3 from 'd3'
-import React from 'react'
 const MARGIN = { top: 30, right: 30, bottom: 50, left: 50 }
 interface Data {
     x: number

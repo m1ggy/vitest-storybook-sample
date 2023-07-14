@@ -1,7 +1,6 @@
 import LineGraph from './components/LineGraph'
 import './App.css'
 import SampleForm from './components/SampleForm'
-import React from 'react'
 function App() {
     const data = [
         { x: 1, y: 15 },

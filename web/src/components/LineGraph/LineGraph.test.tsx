@@ -2,7 +2,6 @@ import { render, screen, within } from '@testing-library/react'
 import { composeStories } from '@storybook/react'
 import * as stories from './LineGraph.stories'
 import { expect, describe, it } from 'vitest'
-import React from 'react'
 const { Sample, GraphTitle } = composeStories(stories)
 
 describe('Renders Sample Line Graph', () => {
