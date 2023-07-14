@@ -1,7 +1,7 @@
-import LineGraph from "./components/LineGraph";
-import "./App.css";
-import SampleForm from "./components/SampleForm";
-
+import LineGraph from './components/LineGraph'
+import './App.css'
+import SampleForm from './components/SampleForm'
+import React from 'react'
 function App() {
     const data = [
         { x: 1, y: 15 },
@@ -9,7 +9,7 @@ function App() {
         { x: 3, y: 17 },
         { x: 4, y: 18 },
         { x: 5, y: 19 },
-    ];
+    ]
     return (
         <>
             <div>
@@ -20,7 +20,7 @@ function App() {
                 />
             </div>
         </>
-    );
+    )
 }
 
-export default App;
+export default App

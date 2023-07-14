@@ -1,32 +1,32 @@
-import React, { FormEvent, useCallback, useState } from "react";
+import React, { useCallback, useState } from 'react'
 
 interface SampleFormProps {
-    title: string;
-    onSubmit: (e: Object) => void;
+    title: string
+    onSubmit: (e: unknown) => void
 }
 
 function SampleForm({ title, onSubmit }: SampleFormProps) {
-    const [formData, setFormData] = useState({});
+    const [formData, setFormData] = useState({})
 
     const submit = useCallback(
         (e: React.FormEvent) => {
-            e.preventDefault();
-            onSubmit(formData);
+            e.preventDefault()
+            onSubmit(formData)
         },
         [onSubmit, formData]
-    );
+    )
 
     const handleChange = useCallback(
         (e: React.ChangeEvent<HTMLInputElement>) => {
-            const { name, value } = e.target;
-            setFormData((prev) => ({ ...prev, [name]: value }));
+            const { name, value } = e.target
+            setFormData((prev) => ({ ...prev, [name]: value }))
         },
         [formData, setFormData]
-    );
+    )
     return (
         <form onSubmit={submit}>
             <title>test</title>
-            <label style={{ fontSize: "3rem" }}>{title}</label>
+            <label style={{ fontSize: '3rem' }}>{title}</label>
 
             <div>
                 <label aria-label="input-1">
@@ -68,7 +68,7 @@ function SampleForm({ title, onSubmit }: SampleFormProps) {
                 Submit Form
             </button>
         </form>
-    );
+    )
 }
 
-export default SampleForm;
+export default SampleForm

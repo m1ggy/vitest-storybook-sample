@@ -1,2 +1,2 @@
-import LineGraph from "./LineGraph";
-export default LineGraph;
+import LineGraph from './LineGraph'
+export default LineGraph
